@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Name — About Me</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f9fafb;
+      --panel: #ffffff;
+      --text: #111827;
+      --muted: #6b7280;
+      --accent: #2563eb;
+      --border: #e5e7eb;
+    }
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--border);
+    }
+    h1 {
+      margin: 1rem 0 0.5rem;
+      font-size: 1.8rem;
+    }
+    p.tagline {
+      margin: 0;
+      color: var(--muted);
+    }
+    section {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    section h2 {
+      margin-top: 0;
+      font-size: 1.2rem;
+      color: var(--accent);
+    }
+    .pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    .pills span {
+      padding: 0.4rem 0.8rem;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+    footer {
+      text-align: center;
+      margin-top: 2rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img class="avatar" src="mypfp.jpg" alt="Your profile picture">
+      <h1>Pranay Miyan</h1>
+      <p class="tagline">Student</p>
+    </header>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        I'm a new passionate developer who wants to learn new things and my main goal is to make AGI, this about me is personal and what i love to do! I am a privacy focus individual who loves both privacy and ease of security, i use many proton services to keep me safe from cyber-attacks like proton pass and authenticator. I use hardened firefox to get rid of telematry and make it alot faster. After that I install many extension however UBlock always stands out the one to install first. I love watching anime, favourite being Death Note! For more proffesional inquiries contact me from the bellow. Thanks for reading this!
+      </p>
+    </section>
+
+    <section id="stack">
+      <h2>Stack</h2>
+      <div class="pills">
+  <!--  <span>HTML</span>
+        <span>CSS</span> 
+        <span>JavaScript</span> -->
+        <span>Python</span>
+   <!-- <span>Lua</span>
+        <span>Git</span> -->
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:pranay.miyan@proton.me">Email Me!</a></p>
+      <p>GitHub: <a href="https://github.com/pranay-miyan" target="_blank">Github</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/pranay-miyan-95ab9a37a/" target="_blank">LinkedIn</a></p>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Made by Pranay
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
